@@ -31,7 +31,7 @@ public class ReglementRestController {
         return reglementService.retrieveAllReglements();
     }
 
-    // http://localhost:8089/SpringMVC/reglement/retrieve-reglement/8
+
     @GetMapping("/retrieve-reglement/{reglement-id}")
     @ResponseBody
     public Reglement retrieveReglement(@PathVariable("reglement-id") Long reglementId) {
