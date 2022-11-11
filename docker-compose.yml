@@ -6,10 +6,10 @@ services:
     ports:
       - "3307:3307"
     environment:
-      - MYSQL_ROOT_PASSWORD=0000
-      - MYSQL_DATABASE= achatdb
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=lotfi1234
+      - MYSQL_DATABASE=achatdb
+      - MYSQL_USER=lotfi
+      - MYSQL_PASSWORD=lotfi
     volumes:
       - achatdb:/var/lib/mysql
 

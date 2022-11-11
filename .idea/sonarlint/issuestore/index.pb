@@ -80,3 +80,9 @@ q
 Asrc/main/java/tn/esprit/rh/achat/util/SpringFoxSwaggerConfig.java,4\0\40dd8c0f636f8b623b1826dfd9e4eb242c77c2ff
 h
 8src/main/java/tn/esprit/rh/achat/entities/Reglement.java,c\2\c22269e0381fa873b71249357fc21699e21412ad
+w
+Gsrc/test/java/tn/esprit/rh/achat/services/OperateurServiceImplTest.java,b\e\bef08db45a43dceeb1db41bd468c45c2a87094cc
+z
+Jsrc/main/java/tn/esprit/rh/achat/services/CategorieProduitServiceImpl.java,3\f\3f21cffd544f45a457d8179dea17138b4b4a1ad5
+u
+Esrc/main/java/tn/esprit/rh/achat/services/FournisseurServiceImpl.java,0\5\057af105a019c29e96644d109d1404c5fe41a363
