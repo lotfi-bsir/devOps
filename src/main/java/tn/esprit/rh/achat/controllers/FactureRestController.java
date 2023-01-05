@@ -14,20 +14,18 @@ import java.util.List;
 @RestController
 @Api(tags = "Gestion des factures")
 @RequestMapping("/facture")
-@CrossOrigin("*")
 public class FactureRestController {
 
     @Autowired
     IFactureService factureService;
 
-    // http://localhost:8089/SpringMVC/facture/retrieve-all-factures
+
     @GetMapping("/retrieve-all-factures")
     @ResponseBody
     public List<Facture> getFactures() {
         return factureService.retrieveAllFactures();
     }
 
-    // http://localhost:8089/SpringMVC/facture/retrieve-facture/8
     @GetMapping("/retrieve-facture/{facture-id}")
     @ResponseBody
     public Facture retrieveFacture(@PathVariable("facture-id") Long factureId) {
@@ -41,10 +39,7 @@ public class FactureRestController {
         return factureService.addFacture(f);
     }
 
-    /*
-     * une facture peut etre annulé si elle a été saisie par erreur Pour ce
-     * faire, il suffit de mettre le champs active à false
-     */
+
     @PutMapping("/cancel-facture/{facture-id}")
     @ResponseBody
     public void cancelFacture(@PathVariable("facture-id") Long factureId) {
@@ -58,7 +53,6 @@ public class FactureRestController {
         return factureService.getFacturesByFournisseur(fournisseurId);
     }
 
-    // http://localhost:8089/SpringMVC/facture/assignOperateurToFacture/1/1
     @PutMapping(value = "/assignOperateurToFacture/{idOperateur}/{idFacture}")
     public void assignOperateurToFacture(@PathVariable("idOperateur") Long idOperateur, @PathVariable("idFacture") Long idFacture) {
         factureService.assignOperateurToFacture(idOperateur, idFacture);
